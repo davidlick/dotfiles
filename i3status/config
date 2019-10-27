@@ -1,0 +1,45 @@
+general {
+	output_format = "i3bar"
+	colors = false
+	interval = 5
+}
+
+order += "disk /"
+order += "volume master"
+order += "wireless wlp3s0"
+order += "battery 0"
+order += "tztime local"
+
+disk "/" {
+	format = "  %percentage_used "
+}
+
+volume master {
+	format = "  %volume "
+	format_muted = " %volume "
+	device = "default"
+	mixer = "Master"
+	mixer_idx = 0
+}
+
+wireless wlp3s0 {
+	format_up = "  %essid %quality "
+	format_down = "  down "
+}
+
+battery 0 {
+	format = " %status %percentage "
+	format_down = ""
+	status_chr = ""
+	status_bat = ""
+	status_unk = "UNK"
+	status_full = ""
+	path = "/sys/class/power_supply/BAT%d/uevent"
+	low_threshold = 10
+	integer_battery_capacity = true
+	last_full_capacity = true
+}
+
+tztime local {
+	format = "%l:%M%p "
+}

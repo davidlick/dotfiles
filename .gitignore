@@ -1,0 +1,13 @@
+google-chrome/
+gtk-3.0/bookmarks
+dleyna-renderer-service.conf
+dconf/
+enchant/
+evolution/
+user-dirs.dirs
+user-dirs.locale
+gedit/
+ibus/
+gnome-control-center/
+gnome-initial-setup-done
+pulse/
