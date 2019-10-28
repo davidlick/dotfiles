@@ -71,7 +71,11 @@ input "1452:601:bcm" {
     bindsym $mod+Shift+q kill
 
     # start your launcher
-    bindsym $mod+d exec rofi -show run
+    for_window [class="Rofi"] floating enable
+    bindsym $mod+d exec rofi -show run -normal-window
+
+    # no title bar
+    border pixel
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
