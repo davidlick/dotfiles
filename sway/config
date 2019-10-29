@@ -35,6 +35,11 @@ set $term gnome-terminal
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/f30/default/normalish/f30.png fill
 font pango:san-francisco 10
+
+# Don't show borders or titles
+default_border none
+default_floating_border none
+for_window [class="^.*"] border none
 #
 # Example configuration:
 #
