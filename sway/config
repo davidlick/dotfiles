@@ -32,7 +32,7 @@ set $workspace9 9
 set $workspace10 "10|  music"
 
 # volume change increment
-set $volume_inc 5
+set $volume_inc 1
 
 # application launcher
 set $menu wofi --show drun
@@ -45,7 +45,7 @@ set $menu wofi --show drun
 # set scaling factor
 output eDP-1 scale 2
 # set wallpaper
-output * bg /home/dhlick/Pictures/wallpapers/3019.jpg fill
+output * bg /home/dhlick/Pictures/wallpapers/city-sunset.jpg fill
 # set font
 font pango:System San Francisco Display 10
 
@@ -114,9 +114,9 @@ bindsym $mod+Shift+Right move right
 
 ## needs pulseaudio-alsa package
 # increase volume
-bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
+bindsym XF86AudioRaiseVolume exec amixer sset Master $volume_inc%+
 # decrease volume 
-bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
+bindsym XF86AudioLowerVolume exec amixer sset Master $volume_inc%-
 # mute volume
 bindsym XF86AudioMute exec amixer sset Master toggle
 
