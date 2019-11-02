@@ -40,12 +40,12 @@ set $menu wofi --show drun
 ### Output configuration
 
 # disable xwayland rendering
-xwayland disable
+#xwayland disable
 
 # set scaling factor
 output eDP-1 scale 2
 # set wallpaper
-#output * bg /home/dhlick/Pictures/wallpapers/marina-bay-hotel.jpg fill
+output * bg /home/dhlick/Pictures/wallpapers/3019.jpg fill
 # set font
 font pango:System San Francisco Display 10
 
@@ -278,7 +278,7 @@ bar {
 gaps outer 15
 gaps inner 10
 
-#bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-#bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 
 include /etc/sway/config.d/*
