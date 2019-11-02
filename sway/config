@@ -54,6 +54,10 @@ default_border none
 default_floating_border none
 for_window [class="^.*"] border none
 
+### App Workspace Assignments
+# spotify is weird and resets WM_CLASS after launch, assign[class=""] doesn't work
+for_window [class="Spotify"] move container to workspace $workspace10
+
 ### Input configuration
 
 # mouse config
