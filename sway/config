@@ -108,24 +108,25 @@ bindsym $mod+Shift+Right move right
 
 ### Volume Controls
 
+## needs pulseaudio-alsa package
 # increase volume
-#bindsym XF86AudioRaiseVolume exec amixer -q sset Master $volume_inc%+
+bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
 # decrease volume 
-#bindsym XF86AudioLowerVolume exec amixer -q sset Master $volume_inc%-
+bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
 # mute volume
-#bindsym XF86AudioMute exec amixer -q sset Master toggle
+bindsym XF86AudioMute exec amixer sset Master toggle
 
 
 ### Media player controls
 
 # play
-#bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPlay exec playerctl play
 # pause
-#bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioPause exec playerctl pause
 # next
-#bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioNext exec playerctl next
 # previous
-#bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPrev exec playerctl previous
 
 ### Workspaces:
 
