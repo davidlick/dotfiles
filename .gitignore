@@ -12,3 +12,4 @@ gnome-control-center/
 gnome-initial-setup-done
 pulse/
 spotify/
+*.save

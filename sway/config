@@ -73,6 +73,9 @@ bindsym $mod+Return exec $term
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# screenshot
+bindsym $mod+Shift+s exec grim /home/dhlick/screenshot.png
+
 # start your launcher
 bindsym $mod+d exec $menu
 
@@ -237,7 +240,7 @@ bar {
 	inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
 	urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
     }
-
+    swaybar_command waybar
     status_command i3status
 }
 
@@ -285,5 +288,8 @@ gaps inner 10
 
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+
+bindsym XF86KbdBrightnessDown exec brightnessctl -d 'smc::kbd_backlight' set 20%-
+bindsym XF86KbdBrightnessUp exec brightnessctl -d 'smc::kbd_backlight' set 20%+
 
 include /etc/sway/config.d/*

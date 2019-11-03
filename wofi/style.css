@@ -8,6 +8,15 @@ background-color: rgba(47,52,63,0.9);
 margin: 5px;
 border: 0px;
 background-color: rgba(47,52,63,0);
+// color: #676e7d;
+color: #fff;
+}
+
+#input::placeholder {
+color: #f00;
+}
+
+#entry {
 color: #676e7d;
 }
 
@@ -32,5 +41,5 @@ background-color: rgba(47,52,63,0);
 #text {
 margin: 5px;
 border: 0px;
-color: #676e7d;
+color: #9da7bf;
 }
