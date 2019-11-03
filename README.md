@@ -3,6 +3,6 @@ Sway configuration files
 
 Screenshots:
 
-![Desktop](https://github.com/davidlick/dotfiles/desktop.png)
+![Desktop](https://raw.githubusercontent.com/davidlick/dotfiles/master/desktop.png)
 
-![ScreenFetch](https://github.com/davidlick/dotfiles/screenfetch.png)
+![ScreenFetch](https://raw.githubusercontent.com/davidlick/dotfiles/screenfetch.png)
