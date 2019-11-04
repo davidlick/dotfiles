@@ -3,7 +3,7 @@
     border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: System San Francisco Display, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     min-height: 0;
 }
 
@@ -37,6 +37,10 @@ window#waybar.chromium {
     border: none;
 }
 
+#workspaces {
+    margin-left: 10px;
+}
+
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
@@ -62,7 +66,11 @@ window#waybar.chromium {
 
 #mode {
     background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 1px solid #fff;
+}
+
+#mode label {
+    color: #fff;
 }
 
 #clock,
