@@ -79,6 +79,9 @@ bindsym $mod+Shift+s exec grim /home/dhlick/screenshot.png
 # start your launcher
 bindsym $mod+d exec $menu
 
+# lock screen
+bindsym $mod+p exec swaylock
+
 # normal = left click drag, right click resize
 # inverse = right click drag, left click resize
 floating_modifier $mod normal

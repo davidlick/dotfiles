@@ -1,0 +1,6 @@
+font=System San Franscio Display 13
+color=000000cc
+indicator-radius=70
+indicator-thickness=3
+disable-caps-lock-text
+indicator-caps-lock
