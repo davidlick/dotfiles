@@ -38,6 +38,8 @@ let g:syntastic_check_on_wq = 0
 
 " set shortcut for nerdtree
 map <C-n> :NERDTreeToggle<CR>
+" get rid of ^G before folders
+let g:NERDTreeNodeDelimiter = "\u00a0"
 
 " airline theme
 let g:airline_theme='deus'
