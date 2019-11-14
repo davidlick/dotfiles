@@ -13,3 +13,4 @@ gnome-initial-setup-done
 pulse/
 spotify/
 *.save
+vim/bundle/*

@@ -1,0 +1,49 @@
+set encoding=utf-8
+set nocompatible	" required for Vundle
+filetype off		" required for Vundle
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+""" Plugins
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" all plugins must be before this line
+call vundle#end()		" required for Vundle
+filetype plugin indent on	" required for Vundle
+
+" show line numbers
+set number
+
+" set colorscheme
+colorscheme solarized
+
+" syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" set shortcut for nerdtree
+map <C-n> :NERDTreeToggle<CR>
+
+" airline theme
+let g:airline_theme='deus'
+" use powerline fonts
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
