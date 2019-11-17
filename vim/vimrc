@@ -1,6 +1,7 @@
 set encoding=utf-8
 set nocompatible	" required for Vundle
 filetype off		" required for Vundle
+syntax on		" display syntax highlighting
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -15,6 +16,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'sheerun/vim-polyglot'
 
 " all plugins must be before this line
 call vundle#end()		" required for Vundle
@@ -40,6 +42,10 @@ let g:syntastic_check_on_wq = 0
 map <C-n> :NERDTreeToggle<CR>
 " get rid of ^G before folders
 let g:NERDTreeNodeDelimiter = "\u00a0"
+" open nerdtree automatically if a directory was opened
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() ==1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " airline theme
 let g:airline_theme='deus'
