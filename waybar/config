@@ -107,16 +107,13 @@
         "format-icons": ["", "", "", "", ""],
         "tooltip": false
     },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{essid} ",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "format-disconnected": "⚠",
+        "format-alt": "{ifname}: ({essid}) {ipaddr}/{cidr}",
         "tooltip": false
     },
     "pulseaudio": {
