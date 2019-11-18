@@ -5,9 +5,9 @@ set $mod Mod4
 
 # home row direction keys, like vim
 set $left h
-set $right j
+set $right l
 set $up k
-set $down l
+set $down j
 
 # UI Colors
 set $bg-color            #2f343f
@@ -45,7 +45,7 @@ set $menu wofi --show drun
 # set scaling factor
 output eDP-1 scale 2
 # set wallpaper
-output * bg /home/dhlick/Pictures/wallpapers/city-sunset.jpg fill
+output * bg /home/dhlick/Pictures/wallpapers/ghost-in-the-shell.jpg fill
 # set font
 font pango:System San Francisco Display 10
 
