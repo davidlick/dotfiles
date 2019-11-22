@@ -14,3 +14,9 @@ pulse/
 spotify/
 *.save
 vim/bundle/*
+vlc
+QtProject.conf
+autostart/
+pavucontrol.ini
+kritadisplayrc
+kritarc
