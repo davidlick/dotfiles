@@ -6,6 +6,7 @@ binutils
 bison
 brightnessctl
 broadcom-wl-dkms
+calc
 cmatrix
 dhcpcd
 dialog
@@ -33,7 +34,6 @@ m4
 make
 man-db
 mbpfan-git
-mercurial
 net-tools
 netctl
 openssh
@@ -53,11 +53,9 @@ swayidle
 swaylock
 termite
 texinfo
-thunderbird
 tlp
 tty-clock
 unzip
-vi
 vim
 vlc
 waybar
