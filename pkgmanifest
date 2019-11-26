@@ -37,6 +37,7 @@ mbpfan-git
 net-tools
 netctl
 openssh
+parted
 patch
 pavucontrol
 pkgconf
@@ -54,6 +55,7 @@ swaylock
 termite
 texinfo
 tlp
+transmission-cli
 tty-clock
 unzip
 vim
