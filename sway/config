@@ -45,7 +45,7 @@ set $menu wofi --show drun
 # set scaling factor
 output eDP-1 scale 2
 # set wallpaper
-output * bg /home/dhlick/Pictures/wallpapers/rainbow-pixel.jpg fill
+output * bg /home/dhlick/Pictures/wallpapers/architecture-sky.jpg fill
 # set font
 font pango:System San Francisco Display 10
 
@@ -63,6 +63,12 @@ for_window [class="Spotify"] move container to workspace $workspace10
 # mouse config
 input "1452:601:bcm5974" {
 	natural_scroll enabled
+}
+
+# keyboard config
+input "1452:601:Apple_Inc._Apple_Internal_Keyboard_/_Trackpad" {
+xkb_layout us
+xkb_options ctrl:nocaps
 }
 
 ### Key bindings
