@@ -8,10 +8,33 @@
 }
 
 window#waybar {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(35,35,45,0.8);
+    border-bottom: 1px solid rgba(75, 75, 125, 0.7);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
 }
 
 #workspaces {
@@ -19,20 +42,17 @@ window#waybar {
 }
 
 #workspaces button {
-    padding: 0 10px;
-    background-color: rgba(0,0,0,0);
-    border-radius: 1000px;
+    padding: 0 5px;
+    background-color: transparent;
     color: #ffffff;
-    margin: 5px;
     border-bottom: 1px solid transparent;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-    background: rgba(0,0,0,0);
-    border-bottom: 1px solid #fff;
+    background: rgba(0, 0, 0, 0);
     box-shadow: inherit;
-    text-shadow: inherit;
+    border-bottom: 1px solid #fff;
 }
 
 #workspaces button.focused {
@@ -45,45 +65,45 @@ window#waybar {
 }
 
 #mode {
-    background-color: rgba(0,0,0,0);
-    color: #f00;
+    background-color: #64727D;
+    border-bottom: 1px solid #fff;
+}
+
+#mode label {
+    color: #fff;
 }
 
 #clock,
 #battery,
-#battery.charging,
 #cpu,
 #memory,
+#temperature,
 #backlight,
 #network,
 #pulseaudio,
-#pulseaudio.muted,
-#temperature,
-#tray {
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd {
+    padding: 0 10px;
+    margin: 0 4px;
+    color: rgba(0,0,0,1);
+}
+
+#clock {
     background-color: rgba(0,0,0,0);
     color: #fff;
-    padding: 0px 15px;
 }
 
-#network.disconnected {
-    color: #751e2d;
-}
-
-#pulseaudio.muted {
-    color: #751e2d;
-}
-
-#temperature.critical {
-    background-color: #f00;
-}
-
-#idle_inhibitor {
+#battery {
     background-color: rgba(0,0,0,0);
-    color: #751e2d;
+    color: #fff;
 }
 
-#idle_inhibitor.activated {
+#battery.charging {
     color: #fff;
+    background-color: rgba(0,0,0,0);
 }
 
 @keyframes blink {
@@ -94,6 +114,8 @@ window#waybar {
 }
 
 #battery.critical:not(.charging) {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -105,3 +127,91 @@ label:focus {
     background-color: rgba(0,0,0,0);
 }
 
+#cpu {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+}
+
+#memory {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+}
+
+#backlight {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+}
+
+#network {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+}
+
+#network.disconnected {
+    background-color: rgba(0,0,0,0);
+    color: #751e2d;
+}
+
+#pulseaudio {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+}
+
+#pulseaudio.muted {
+    background-color: rgba(0,0,0,0);
+    color: #751e2d;
+}
+
+#custom-media {
+    background-color: rgba(0,0,0,0);
+    color: #2a5c45;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+}
+
+#temperature.critical {
+    background-color: #ff0000;
+}
+
+#tray {
+    background-color: rgba(0,0,0,0);
+}
+
+#idle_inhibitor {
+    background-color: rgba(0,0,0,0);
+    color: #751e2d;
+}
+
+#idle_inhibitor.activated {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+}
+
+#mpd {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+}
+
+#mpd.disconnected {
+    background-color: rgba(0,0,0,0);
+}
+
+#mpd.stopped {
+    background-color: rgba(0,0,0,0);
+}
+
+#mpd.paused {
+    background-color: rgba(0,0,0,0);
+}
